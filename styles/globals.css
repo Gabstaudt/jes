@@ -1,0 +1,40 @@
+/* Tailwind v4 */
+@import "tailwindcss/preflight";
+@import "tailwindcss";
+
+/* Design tokens (v4) */
+@theme {
+  /* Cores JES */
+  --color-jes-azulProfundo: #003366;
+  --color-jes-verdeAmazonico: #27978E;
+  --color-jes-verdeDigital: #00C7A9;
+  --color-jes-cinzaEscuro: #1E1E1E;
+  --color-jes-branco: #FFFFFF;
+
+  /* Sombras e raios (v4 aceita tokens custom) */
+  --shadow-jesGlow: 0 0 24px 0 rgba(0, 199, 169, 0.6);
+  --shadow-jesSoft: 0 8px 24px rgba(0,0,0,0.15);
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+}
+
+/* Base */
+html { scroll-behavior: smooth; }
+body { @apply bg-white text-neutral-900 text-[15px] antialiased; }
+
+/* Foco visível */
+:focus-visible {
+  outline: 2px solid var(--color-jes-verdeDigital);
+  outline-offset: 2px;
+}
+
+/* Prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
