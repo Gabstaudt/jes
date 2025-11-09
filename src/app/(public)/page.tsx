@@ -1,22 +1,23 @@
-import Header from "@/src/components/layout/Header";
-import Hero from "@/src/components/hero/Hero";
-import Keynotes from "@/src/components/sections/Keynotes";
-import Speakers from "@/src/components/sections/Speakers";
-import LastYear from "@/src/components/sections/LastYear";
-import SocialLinks from "@/src/components/sections/SocialLinks";
-import Footer from "@/src/components/layout/Footer";
-
+import HeaderFX from "@/components/layout/HeaderFX";
+import HeroFX from "@/components/hero/HeroFX";
+import Keynotes from "@/components/sections/Keynotes";
+import Speakers from "@/components/sections/Speakers";
+import LastYear from "@/components/sections/LastYear";
+import SocialLinks from "@/components/sections/SocialLinks";
+import Footer from "@/components/layout/Footer";
+import CustomCursor from "@/components/ui/CustomCursor";
 
 export default function Page() {
-return (
-<main>
-<Header />
-<Hero />
-<Keynotes />
-<Speakers />
-<LastYear />
-<SocialLinks />
-<Footer />
-</main>
-);
+  return (
+    <main>
+      <HeaderFX />
+      <CustomCursor />
+      <HeroFX />
+      <Keynotes />
+      <Speakers />
+      <LastYear />
+      <SocialLinks />
+      <Footer />
+    </main>
+  );
 }
